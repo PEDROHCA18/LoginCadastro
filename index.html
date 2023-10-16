@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(function() {
+    $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+});
+
+</script>
+<div class="login-page">
+    <div class="form">
+        <h1>GYM ACADEMY</h1>
+        <img src="depositphotos_69292345-stock-illustration-man-and-woman-fitness-silhouette.jpg" alt="icone">
+      <form class="register-form">
+         <input type="text" placeholder="Usúario"/>
+        <input type="password" placeholder="Senha"/>
+        <input type="text" placeholder="Email"/>
+        <button>Criar</button>
+        <p class="message">entre em contato <a href="#">aleatorio </a></p>
+      </form>
+      <form class="login-form">
+        <input type="text" placeholder="Usúario"/>
+        <input type="password" placeholder="Password"/>
+        <button>Login</button>
+        <p class="message">Não tem conta? <a href="#">Crie agora!</a></p>
+      </form>
+    </div>
+  </div>
